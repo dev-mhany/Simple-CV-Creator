@@ -1,0 +1,341 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin-top: 20px;
+}
+
+#input-section label, #input-section input, #input-section textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    overflow: hidden;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#cv-section {
+    margin-top: 40px;
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+    display: none; /* initially hidden */
+}
+
+#cv-section img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Original Styles... */
+
+/* Template 1 */
+.template1 {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 40px;
+    border: 2px solid #ddd;
+    font-family: Arial, sans-serif;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.template1 img {
+    float: right;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.template1 h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.template1 h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.template1 h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.template1 p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.template1 .contact {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.template1 .professional-summary {
+    margin-bottom: 30px;
+}
+
+.template1 .work-experience, .template1 .education, .template1 .professional-development {
+    margin-bottom: 20px;
+}
+
+.template1 .job {
+    margin-bottom: 10px;
+}
+
+.template1 .bullet-points {
+    padding-left: 20px;
+}
+
+.template1 .bullet-points li {
+    list-style-type: disc;
+    font-size: 16px;
+}
+
+/* Template 2 */
+.template2 {
+    background-color: #e8e8e8;
+    color: #555;
+    padding: 30px;
+    border: 1px solid #ccc;
+    font-family: "Helvetica Neue", sans-serif;
+    max-width: 750px; 
+    margin: 20px auto;
+}
+
+.template2 img {
+    float: left;
+    border-radius: 40%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.template2 h1 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.template2 h2 {
+    font-size: 26px;
+    font-weight: lighter;
+    margin: 15px 0;
+}
+
+.template2 h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+.template2 p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 8px 0;
+}
+
+.template2 .contact {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.template2 .professional-summary {
+    margin-bottom: 20px;
+}
+
+.template2 .work-experience, .template2 .education, .template2 .professional-development {
+    margin-bottom: 15px;
+}
+
+.template2 .job {
+    margin-bottom: 8px;
+}
+
+.template2 .bullet-points {
+    padding-left: 15px;
+}
+
+.template2 .bullet-points li {
+    list-style-type: circle;
+    font-size: 15px;
+}
+
+/* Template 3 */
+.template3 {
+    background-color: #e0e0e0;
+    color: #444;
+    padding: 50px;
+    border: 3px dotted #bbb;
+    font-family: "Times New Roman", serif;
+    max-width: 850px; 
+    margin: 10px auto;
+}
+
+.template3 img {
+    display: block;
+    border-radius: 30%;
+    width: 130px;
+    height: 130px;
+    margin: 10px auto;
+    margin-bottom: 15px;
+}
+
+.template3 h1 {
+    font-size: 38px;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.template3 h2 {
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 18px 0;
+}
+
+.template3 h3 {
+    font-size: 22px;
+    font-weight: semi-bold;
+    margin: 12px 0;
+}
+
+.template3 p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+.template3 .contact {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.template3 .professional-summary {
+    margin-bottom: 35px;
+}
+
+.template3 .work-experience, .template3 .education, .template3 .professional-development {
+    margin-bottom: 25px;
+}
+
+.template3 .job {
+    margin-bottom: 12px;
+}
+
+.template3 .bullet-points {
+    padding-left: 25px;
+}
+
+.template3 .bullet-points li {
+    list-style-type: square;
+    font-size: 17px;
+}
+
+
+/* Template 4 */
+.template4 {
+    background-color: #d7d7d7;
+    color: #222;
+    padding: 45px;
+    border: 2px dashed #aaa;
+    font-family: Georgia, serif;
+    max-width: 900px; 
+    margin: 15px auto;
+}
+
+.template4 img {
+    float: right;
+    border-radius: 60%;
+    width: 120px;
+    height: 120px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.template4 h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 20px 0;
+}
+
+.template4 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 22px 0;
+}
+
+.template4 h3 {
+    font-size: 24px;
+    font-weight: medium;
+    margin: 14px 0;
+}
+
+.template4 p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 14px 0;
+}
+
+.template4 .contact {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.template4 .professional-summary {
+    margin-bottom: 40px;
+}
+
+.template4 .work-experience, .template4 .education, .template4 .professional-development {
+    margin-bottom: 30px;
+}
+
+.template4 .job {
+    margin-bottom: 14px;
+}
+
+.template4 .bullet-points {
+    padding-left: 30px;
+}
+
+.template4 .bullet-points li {
+    list-style-type: none;
+    font-size: 18px;
+    background-image: url('bullet-icon.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+}

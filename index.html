@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <title>Simple CV Generator</title>
+</head>
+<body>
+    <h1>CV Generator by Muhammad Hany</h1>
+    
+    <section id="input-section">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="profile-image">Profile Image:</label>
+            <input type="file" id="profile-image" accept="image/*">
+            <img id="profile-image-preview" src="" alt="Uploaded Profile Preview" style="max-width: 10%; height: auto; display: none;">
+            <img id="profile-preview" src="" alt="Profile preview" hidden><br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="Enter your name"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Enter your email"><br>
+
+            <label for="phone">Phone No.:</label>
+            <input type="tel" id="phone" required pattern="[0-9]{11}" placeholder="Enter your phone number"><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" required placeholder="Enter your address"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Professional Details</legend>
+        
+            <label for="about-me">About me:</label>
+            <textarea id="about-me" rows="3" required placeholder="A passionate and budding frontend developer with a keen eye for design and a commitment to creating intuitive user interfaces. Eager to bring fresh ideas, adapt to new technologies, and contribute positively to team projects.
+            "></textarea><br>
+        
+            <label for="education">Education:</label>
+            <textarea id="education" rows="2" required placeholder="Bachelor of Agriculture and Natural Resources, Aswan University. Graduated in 2021."></textarea><br>
+        
+            <label for="experience">Experience:</label>
+            <textarea id="experience" rows="3" required placeholder="Internship at [Company Name], [City, State] – Worked closely with the development team to create responsive web pages, debugged issues, and enhanced website performance. Duration: [Month Year] to [Month Year]."></textarea><br>
+        
+            <label for="skills">Skills:</label>
+            <textarea id="skills" rows="4" required placeholder="- Proficient in HTML, CSS, and JavaScript.
+- Experience with React.js and Vue.js frameworks.
+- Solid understanding of responsive design and cross-browser compatibility.
+- Familiarity with version control using Git and GitHub.
+- Knowledge of build tools like Webpack and Gulp."></textarea><br>
+        
+            <label for="interests">Interests:</label>
+            <textarea id="interests" rows="4" required placeholder="- Staying updated with the latest web design trends.
+- Open-source contribution.
+- Exploring new frontend technologies and tools.
+- UI/UX design principles."></textarea><br>
+        
+            <label for="languages">Languages:</label>
+            <textarea id="languages" rows="2" required placeholder="Arabic (Native), English (Intermediate)
+            "></textarea><br>
+        
+            <label for="work-history">Work history:</label>
+            <textarea id="work-history" rows="4" required placeholder="[Company Name], [City, State] – Junior Frontend Developer
+[Month Year] to Present: Worked on multiple projects enhancing website usability, increasing page speed, and collaborating closely with the design team to implement pixel-perfect layouts."></textarea><br>
+        </fieldset>
+       
+        <button id="generate-btn">Generate CV</button>
+        <button id="reset-btn">Reset</button>
+        <button id="download-btn" disabled>Download as PDF</button> <!-- Initially disabled -->
+    </section>
+
+    <section id="cv-section">
+        <!-- Generated CVs will be displayed here -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
